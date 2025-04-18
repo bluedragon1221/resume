@@ -3,7 +3,7 @@
     "name": "Collin Williams",
     "label": "Student",
     "email": "cwilliams1221@proton.me",
-    "url": "https://bluedragon1221.github.io",
+    "url": "<a href='https://bluedragon1221.github.io'>https://bluedragon1221.github.io</a>",
     "summary": "I am a Sophomore in High School with a genuine passion for software development and systems engineering.\nAs Head Programmer for my High School's robotics team, I lead a team in developing complex control systems while mentoring peers in programming best practices.\nMy technical expertise spans multiple programming languages (Python, Rust, Java), system administration with NixOS, and containerization with Docker.\nI balance my technical pursuits with leadership experience in youth ministry, where I've developed strong communication and planning skills.\nThrough my various open-source projects, I demonstrate a commitment to continuous learning and contributing to the developer community.\nI am seeking opportunities to further apply my technical skills in collaborative environments while continuing to expand my knowledge.\n",
     "profiles": [
       {
@@ -45,10 +45,16 @@
       "name": "SQLite"
     },
     {
-      "name": "DuckDB"
+      "name": "Linux"
     },
     {
-      "name": "Linux"
+      "name": "Git"
+    },
+    {
+      "name": "GitHub"
+    },
+    {
+      "name": "CI/CD"
     },
     {
       "name": "Docker"
@@ -88,7 +94,7 @@
       "startDate": "2024-08-16",
       "highlights": [
         "Lead two other programmers as the Head Programmer in writing the code for a complete FIRST Robotics Competition robot.",
-        "Wrote a 2000 lines-of-code codebase in Java, utilizing standard Object Oriented design approaches, such as abstraction, inheritance, and singleton classes.",
+        "Helped write a 4000 lines-of-code codebase in Java, utilizing standard Object Oriented design approaches, such as abstraction, inheritance, and singleton classes.",
         "Made use of standard competition robotics libraries, such as WPILib, Phoenix 6, ChoreoLib, and PhotonVision, learning how to use them effectively by reading documentation.",
         "Utilized PID control loops to allow for position-based control.",
         "Completed the whole robot within a 6 week time period."

@@ -18,20 +18,14 @@
         buildInputs = with pkgs; [ tera-cli ];
         src = ./.;
       } ''
-        mkdir -p $out
-        cat $src/resume.json \
-          | tera -st $src/resume.html \
-          > $out/index.html
+        make --makefile=$src/Makefile OBJDIR=$out SRCDIR=$src web
       '';
 
       pdf = pkgs.runCommand "build-pdf" {
         buildInputs = with pkgs; [ tera-cli python313Packages.weasyprint ];
         src = ./.;
       } ''
-        mkdir -p $out
-        cat $src/resume.json \
-          | tera -st $src/resume.html \
-          | weasyprint - $out/index.pdf
+        make --makefile=$src/Makefile OBJDIR=$out pdf
       '';
     };
   };

@@ -8,6 +8,13 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+    @media screen {
+      body {
+        width: 8.5in;
+        margin: auto;
+      }
+    }
+
     @page {
       size: letter portrait;
       margin: 0.5in;
@@ -65,7 +72,6 @@
 
       li:not(:first-of-type):before {
         content: "∙ ";
-        color: var(--accent);
         font-weight: bold;
       }
 
@@ -133,10 +139,15 @@
 
   <h2>Experience</h2>
   {% for work in work %}
-  <h3>{{ work.position }}, {{ work.name }} <span class="date">{{ work.startDate | date(format="%Y") }}-{% if
-      work.endDate
-      %}{{ work.endDate |
-      date(format="%Y") }}{% endif %}</span></h3>
+  <h3>
+    {{ work.position }}, {{ work.name }}
+    <span class="date">
+      {{ work.startDate | date(format="%Y") }}
+      -{% if work.endDate%}
+      {{ work.endDate | date(format="%Y") }}
+      {% endif %}
+    </span>
+  </h3>
 
   <ul>
     {% for highlight in work.highlights %}
