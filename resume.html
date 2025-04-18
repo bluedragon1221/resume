@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ basics.name }}</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+    @page {
+      size: letter portrait;
+      margin: 0.5in;
+    }
+
+    * {
+      font-family: "IBM Plex Sans";
+    }
+
+    span.date {
+      float: right;
+    }
+
+    h1 span {
+      font-size: 50%;
+      display: block;
+    }
+
+    h1 span:first-of-type {
+      display: none;
+    }
+
+    em {
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    dl {
+      margin: 0;
+      padding: 0;
+    }
+
+    dl dd {
+      display: inline;
+      margin: 0;
+      padding: 0;
+      margin-right: 2rem;
+    }
+
+    dl dt {
+      display: inline;
+      font-style: italic;
+      color: inherit;
+      margin: 0;
+      padding: 0;
+      margin-right: 1rem;
+    }
+
+    .inline-bullets ul {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 0.3rem;
+
+      list-style-type: none;
+
+      li:not(:first-of-type):before {
+        content: "∙ ";
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      li {
+        display: inline;
+      }
+    }
+
+    ul:not(.inline-bullets>ul) {
+      padding: 0;
+      margin: 0;
+      padding-left: 15px;
+    }
+
+    ul li {
+      padding-bottom: 0.3rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    {{ basics.name }} <span>∙</span> <span>{{ basics.label }}</span>
+  </h1>
+
+  <dl>
+    {% if basics.email %}
+    <dt>email</dt>
+    <dd>
+      <code><a href="mailto:{{ basics.email }}">{{ basics.email }}</a></code>
+    </dd>
+    {% endif %}
+    {% if basics.url %}
+    <dt>web</dt>
+    <dd><code>{{ basics.url }}</code></dd>
+    {% endif %}
+    {% if basics.profiles %}
+    {% for network in basics.profiles %}
+    <dt>{{ network.network | lower }}</dt>
+    <dd><code>{{ network.username | safe}}</code></dd>
+    {% endfor %}
+    {% endif %}
+  </dl>
+
+  {{ basics.summary | safe }}
+
+  {% if skills %}
+  <h2>Skills and Competencies</h2>
+
+  <div class="inline-bullets">
+    <ul>
+      {% for skill in skills %}
+      <li>{{ skill.name }}</li>
+      {% if skill.keywords and "break" in skill.keywords %}
+    </ul>
+  </div>
+  <div class="inline-bullets">
+    <ul>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  {% endif %}
+
+  <h2>Experience</h2>
+  {% for work in work %}
+  <h3>{{ work.position }}, {{ work.name }} <span class="date">{{ work.startDate | date(format="%Y") }}-{% if
+      work.endDate
+      %}{{ work.endDate |
+      date(format="%Y") }}{% endif %}</span></h3>
+
+  <ul>
+    {% for highlight in work.highlights %}
+    <li>{{ highlight | safe }}</li>
+    {% endfor %}
+  </ul>
+
+  {% endfor %}
+
+  <h2>Service and Honors</h2>
+
+  <ul>
+    {% for award in awards %}
+    <li>{{ award.title | safe }} {% if award.date %}<span class="date">{{ award.date |
+        date(format="%Y") }}</span>{% endif %}</li>
+    {% endfor %}
+  </ul>
+
+  <h2>Open Source</h2>
+
+  <ul>
+    {% for project in projects %}
+    <li><em>{{ project.name | safe }}</em>: {{ project.description |
+      safe }}</li>
+    {% endfor %}
+  </ul>
+</body>
+
+</html>

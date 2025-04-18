@@ -1,0 +1,154 @@
+{
+  "basics": {
+    "name": "Collin Williams",
+    "label": "Student",
+    "email": "cwilliams1221@proton.me",
+    "url": "https://bluedragon1221.github.io",
+    "summary": "I am a Sophomore in High School with a genuine passion for software development and systems engineering.\nAs Head Programmer for my High School's robotics team, I lead a team in developing complex control systems while mentoring peers in programming best practices.\nMy technical expertise spans multiple programming languages (Python, Rust, Java), system administration with NixOS, and containerization with Docker.\nI balance my technical pursuits with leadership experience in youth ministry, where I've developed strong communication and planning skills.\nThrough my various open-source projects, I demonstrate a commitment to continuous learning and contributing to the developer community.\nI am seeking opportunities to further apply my technical skills in collaborative environments while continuing to expand my knowledge.\n",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "<a href='https://github.com/bluedragon1221'>bluedragon1221</a>"
+      },
+      {
+        "network": "Mastodon",
+        "username": "<a href='https://mastodon.social/@Collinux'>Collinux</a>"
+      }
+    ]
+  },
+  "awards": [
+    {
+      "title": "FRC Innovation in Control Award",
+      "date": "2025-03-15"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python"
+    },
+    {
+      "name": "NumPy"
+    },
+    {
+      "name": "Pandas"
+    },
+    {
+      "name": "FastAPI"
+    },
+    {
+      "name": "Rust"
+    },
+    {
+      "name": "Java"
+    },
+    {
+      "name": "SQLite"
+    },
+    {
+      "name": "DuckDB"
+    },
+    {
+      "name": "Linux"
+    },
+    {
+      "name": "Docker"
+    },
+    {
+      "name": "Nix",
+      "keywords": [
+        "break"
+      ]
+    },
+    {
+      "name": "Networking"
+    },
+    {
+      "name": "Control Systems",
+      "keywords": [
+        "break"
+      ]
+    },
+    {
+      "name": "Cross-functional collaboration"
+    },
+    {
+      "name": "Communication"
+    },
+    {
+      "name": "Planning"
+    },
+    {
+      "name": "Free and Open Source Software (FOSS)"
+    }
+  ],
+  "work": [
+    {
+      "name": "8114 Robotics",
+      "position": "Head Programmer",
+      "startDate": "2024-08-16",
+      "highlights": [
+        "Lead two other programmers as the Head Programmer in writing the code for a complete FIRST Robotics Competition robot.",
+        "Wrote a 2000 lines-of-code codebase in Java, utilizing standard Object Oriented design approaches, such as abstraction, inheritance, and singleton classes.",
+        "Made use of standard competition robotics libraries, such as WPILib, Phoenix 6, ChoreoLib, and PhotonVision, learning how to use them effectively by reading documentation.",
+        "Utilized PID control loops to allow for position-based control.",
+        "Completed the whole robot within a 6 week time period."
+      ]
+    },
+    {
+      "name": "CyberPatriots",
+      "position": "Linux Specialist",
+      "startDate": "2024-08-16",
+      "endDate": "2025-01-17",
+      "highlights": [
+        "Worked on a team of 5 individuals, competing in the AFA CyberPatriots Cyber Defense Competition.",
+        "Specialized in Linux, acting to find security issues in an Ubuntu or Linux Mint system and fix them."
+      ]
+    },
+    {
+      "name": "The Church of Jesus Christ of Latter-day Saints",
+      "position": "Youth Ministry Leader (14-16 yo)",
+      "startDate": "2024-01-07",
+      "highlights": [
+        "Worked on a team of 3-5 youth leaders to plan longer activities, such as service projects and week-long camps.",
+        "Lead lessons with other youth on coming closer to Jesus Christ.",
+        "Gave several 5-7 minute sermons on various assigned gospel topics."
+      ]
+    },
+    {
+      "name": "The Church of Jesus Christ of Latter-day Saints",
+      "position": "Youth Ministry Leader (10-14 yo)",
+      "startDate": "2020-01-05",
+      "endDate": "2024-01-07",
+      "highlights": [
+        "Worked on a team of 3-5 youth leaders to plan short, engaging activites for other youth, including capture-the-flag, jeopardy, and charades activities.",
+        "Gave several 3-5 minute sermons on various assigned gospel topics"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "<a href='https://github.com/bluedragon1221/nixos'>nixos-config</a>",
+      "description": "My NixOS configuration. Contains 1000 lines of nix code configurations, specifying every program that I use daily, including fish, tmux, foot, firefox, Hyprland, and many more applications."
+    },
+    {
+      "name": "<a href='https://github.com/bluedragon1221/awesome-selftaught-calculus'>awesome-selftaught-calculus</a>",
+      "description": "Contains links to materials I used for self-learning calculus"
+    },
+    {
+      "name": "<a href='https://github.com/bluedragon1221/papa_stories'>papa_stories</a>",
+      "description": "My grandfather wrote a collection of stories from his childhood, and I offered to turn them into a website for him."
+    },
+    {
+      "name": "<a href='https://github.com/bluedragon1221/Note'>Note</a>",
+      "description": "When I am learning a new technology, it helps to write what I have learned so far. This is where I keep those writings."
+    },
+    {
+      "name": "various zsh plugins",
+      "description": "<a href='https://github.com/bluedragon1221/zsh-cdls'>zsh-cdls</a>, <a href='https://github.com/bluedragon1221/zsh-rust'>zsh-rust</a>, and <a href='https://github.com/bluedragon1221/zsh-lambda-prompt'>zsh-lambda-prompt</a> are small plugins I wrote for the zsh shell to solve my specific needs."
+    },
+    {
+      "name": "<a href='https://github.com/bluedragon1221/vroom'>vroom</a>",
+      "description": "a utility I wrote to store random pieces of information. Inspired by <a href='https://github.com/bluedragon1221/boom'>boom</a>, but written in Rust."
+    }
+  ]
+}
